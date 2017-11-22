@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
 	def index
-		render :index
+		# render :index
 	end
 	def show
 		
@@ -13,9 +13,12 @@ class EntriesController < ApplicationController
 	end
 
 	def edit
-		render :edit
+		# render :edit
 	end
 	def update
 		redirect_to entry_url(params[:id])
+	end
+	def destroy
+		redirect_to index_url
 	end
 end
