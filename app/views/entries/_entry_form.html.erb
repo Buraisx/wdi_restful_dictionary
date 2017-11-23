@@ -1,0 +1,10 @@
+<% form_fields = [:word, :language, :definition]%>
+<%= form_for entry do |entry| %>
+	<% form_fields.each do |field| %>
+		<p>
+			<%= entry.label field %>
+			<%= entry.text_field field %>
+		</p>
+	<% end %>
+	<%= entry.submit %>
+<% end %>

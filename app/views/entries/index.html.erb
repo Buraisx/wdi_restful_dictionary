@@ -1,1 +1,3 @@
-<p>This is the entries index page</p>
+<% @entries.each do |entry| %>
+	<h1><%= link_to entry.word, entry_url(entry.id) %></h1>
+<% end %>

@@ -1,1 +1,5 @@
-<p>This page will display information about entry number <%= params[:id]%></p>
+<h1><%= @entry.word %></h1>
+<p><%= @entry.language %></p>
+
+<h2>Definition: <%= @entry.definition %></h2>
+<p><%= link_to "delete", entry_path(@entry), method: :delete %></p>
